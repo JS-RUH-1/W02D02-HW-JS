@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <script type="text/javascript" src="basicMaths.js"></script>
+    <script type="text/javascript" src="./task1.js"></script>
 </head>
 
 <body>
@@ -10,20 +10,24 @@
     <input type="text" name="num1" id='num1'>
     <label> + </label>
     <input type="text" name="num2" id='num2'>
-    <button> = </button>
+    <button id="button" onclick="add()"> = </button>
     <label id="ansSum"></label>
     <br>
     <input type="text" name="num3" id='num3'>
     <label> x </label>
     <input type="text" name="num4" id='num4'>
-    <button> = </button>
+    <button onclick="multiply()"> = </button>
     <label id="ansMultiply"></label>
     <br>
     <input type="text" name="num5" id='num5'>
     <label> mod </label>
     <input type="text" name="num6" id='num6'>
-    <button> = </button>
+    <button onclick="mod()"> = </button>
     <label id="ansMod"></label>
+
+    <br>
+    <!-- <p id="demo"></p> -->
+
 </body>
 
 </html>
