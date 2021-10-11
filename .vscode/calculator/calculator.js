@@ -13,7 +13,7 @@ const updateCalc = (force) => {
             if(ops === "-") newResult = numbers[0] - numbers[1]
             if(ops === "*") newResult = numbers[0] * numbers[1]
             if(ops === "%") newResult = numbers[0] % numbers[1]
-            if(ops === "/") newResult = numbers[0] % numbers[1]
+            if(ops === "/") newResult = numbers[0] / numbers[1]
             numbers = [newResult];
         }
     }
