@@ -1,0 +1,24 @@
+body{
+    margin:0px
+}
+.container{
+    display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3px;
+  background-color: aquamarine;
+  border-radius: 10px;
+
+}
+.textfield{
+    grid-area: 1 / 2 / 2 / 2   
+}
+.buttons{
+    grid-area: 2 / 2 / 2 / 2
+}
+.result{
+    grid-area: 3 / 2 / 4 / 2
+}
+.drop-down{
+    grid-area: 1 / 2 / 1 / 2
+}

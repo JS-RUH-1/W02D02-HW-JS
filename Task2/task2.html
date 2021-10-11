@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2 style="margin-left: 20px">
+        11/10/2021 JS Lab - Abdulsalam ALdawsari
+      </h2>
+      <div class="buttons">
+        <h3>Counter</h3>
+        <button id="btn">Click me!</button>
+      </div>
+      <div class="result">
+        <p>
+          The Click Times is :
+          <span id="result"></span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Rands Currency Convertor -->
+
+    <div class="container">
+      <div class="textfield">
+        <h3>Rands Currency Convertor</h3>
+        Enter Ammount:
+        <input type="text" id="Rands" /><br /><br />
+      </div>
+      <div class="buttons">
+        <input type="button" onClick="toDolar()" value="to dolar" />
+        <input type="button" onClick="toEuro()" value="to euros" />
+        <input type="button" onClick="toPounds()" value="to Pounds" />
+      </div>
+      <div class="result">
+        <p>
+          The Result is :
+          <span id="ammount"></span>
+        </p>
+
+        <h3>Drop Down List with 25 Options</h3>
+      </div>
+    </div>
+
+    <!-- Drop Down List with 25 Option -->
+
+    <div class="container">
+      <div class="drop-down">
+        <select name="elements" id="elements"></select>
+        <div id="elements"></div>
+      </div>
+    </div>
+
+    <script src="./task2.js"></script>
+  </body>
+</html>
