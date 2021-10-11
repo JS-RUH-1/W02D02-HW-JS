@@ -15,19 +15,39 @@
       of your web page.
     </p>
 
-    <button id="button">Clicked 0</button><br />
+    <button onclick="count()" id="button">Clicked 0</button><br />
     <br />
     <br />
     <label>Enter rands value</label>
     <input id="rands" />
     <br /><br />
-    <button id="convert">convert</button><br /><br />
+    <button onclick="convert(rands.value)" id="convert">convert</button><br /><br />
     <label id="dollars"></label> <br />
     <label id="euros"></label> <br />
     <label id="pounds"></label> <br />
     <br />
     <label for="elements">Choose an option:</label>
-    <select name="elements" id="elements"></select>
-    <script type="text/javascript" src="task3.js"></script>
+    <select name="elements" id="elements"> </select>
   </body>
+
+  <script>
+          let num =0
+    function count(){
+      document.querySelector("#button").innerHTML = `Clicked ${ num +=1 } times`
+    }
+
+    for(let i =1; i <= 25; i++){
+      let option = document.createElement("OPTION");
+      option.innerHTML = ` option ${i}`
+      document.getElementById("elements").appendChild(option); 
+    }
+
+    function convert(rands){
+      document.getElementById("dollars").innerHTML = `dollars: ${ parseInt(rands) * 0.067 }`;
+      document.getElementById("euros").innerHTML = `euros: ${ parseInt(rands) * 0.058  }`;
+      document.getElementById("pounds").innerHTML =  ` pounds : ${ parseInt(rands) * 0.049  }`;
+
+    }
+  </script>
 </html>
+

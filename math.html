@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <script type="text/javascript" src="basicMaths.js"></script>
+    <!-- <script type="text/javascript" src="basicMaths.js"></script> -->
 </head>
 
 <body>
@@ -10,20 +10,35 @@
     <input type="text" name="num1" id='num1'>
     <label> + </label>
     <input type="text" name="num2" id='num2'>
-    <button> = </button>
+    <button onclick="add(num1.value, num2.value)"> = </button>
     <label id="ansSum"></label>
     <br>
     <input type="text" name="num3" id='num3'>
     <label> x </label>
     <input type="text" name="num4" id='num4'>
-    <button> = </button>
+    <button onclick="x(num3.value, num4.value)"> = </button>
     <label id="ansMultiply"></label>
     <br>
     <input type="text" name="num5" id='num5'>
     <label> mod </label>
     <input type="text" name="num6" id='num6'>
-    <button> = </button>
+    <button onclick="mod(num5.value, num6.value)"> = </button>
     <label id="ansMod"></label>
 </body>
+
+<script>
+
+function add(num1, num2){
+    document.querySelector("#ansSum").innerHTML = ` ${parseInt(num1)  + parseInt(num2) }`;
+}
+function x(num1, num2){
+    document.querySelector("#ansMultiply").innerHTML = ` ${parseInt(num1)  * parseInt(num2) }`;
+}
+function mod(num1, num2){
+    document.querySelector("#ansMod").innerHTML = ` ${parseInt(num1)  % parseInt(num2) }`;
+}
+
+
+</script>
 
 </html>
