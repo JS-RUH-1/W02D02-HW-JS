@@ -4,10 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
     <title>Document</title>
   </head>
-  <body>
+  <body onload="init()">
     <h1>The first heading</h1>
+
+    <input type="text" id="GBP" size="10" value="0" onchange="gbp()"/>
+      <label for="GBP"> GBP </label>
+      <input type="text" id="USD" size="10" value="0" onchange="usd()" />
+      <label for="USD"> USD </label>
+      <input type="text" id="EUR" size="10" value="0" onchange="eur()" />
+      <label for="EUR"> EUR </label>
+      <body onload="init()">
 
     <p>
       This is an example of a paragraph. Paragraphs usually contain more text
@@ -15,7 +24,8 @@
       of your web page.
     </p>
 
-    <button id="button">Clicked 0</button><br />
+    <button id="button" onclick="calc">Clicked</button><br />
+    
     <br />
     <br />
     <label>Enter rands value</label>
@@ -28,6 +38,43 @@
     <br />
     <label for="elements">Choose an option:</label>
     <select name="elements" id="elements"></select>
-    <script type="text/javascript" src="task3.js"></script>
+    <script type="text/javascript" src="../javascript/task1.js"></script>
+  
+
+
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 5</a>
+        <a href="#">Link 6</a>
+        <a href="#">Link 7</a>
+        <a href="#">Link 8</a>
+        <a href="#">Link 9</a>
+        <a href="#">Link 10</a>
+        <a href="#">Link 11</a>
+        <a href="#">Link 12</a>
+        <a href="#">Link 13</a>
+        <a href="#">Link 14</a>
+        <a href="#">Link 15</a>
+        <a href="#">Link 16</a>
+        <a href="#">Link 17</a>
+        <a href="#">Link 18</a>
+        <a href="#">Link 19</a>
+        <a href="#">Link 20</a>
+        <a href="#">Link 21</a>
+        <a href="#">Link 22</a>
+        <a href="#">Link 23</a>
+        <a href="#">Link 24</a>
+        <a href="#">Link 25</a>
+       
+      </div>
+    </div>    
+  
+  
+  
   </body>
 </html>
