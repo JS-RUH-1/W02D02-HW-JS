@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <script type="text/javascript" src="basicMaths.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>Use the form below to do some basic maths</h1>
-    <input type="text" name="num1" id='num1'>
+    <input type="text" name="num1" id="num1" />
     <label> + </label>
-    <input type="text" name="num2" id='num2'>
-    <button> = </button>
+    <input type="text" name="num2" id="num2" />
+    <button onclick="hundlesSumBtn()">=</button>
     <label id="ansSum"></label>
-    <br>
-    <input type="text" name="num3" id='num3'>
-    <label> x </label>
-    <input type="text" name="num4" id='num4'>
-    <button> = </button>
-    <label id="ansMultiply"></label>
-    <br>
-    <input type="text" name="num5" id='num5'>
-    <label> mod </label>
-    <input type="text" name="num6" id='num6'>
-    <button> = </button>
-    <label id="ansMod"></label>
-</body>
 
+    <br />
+    <input type="text" name="num3" id="num3" />
+    <label> x </label>
+    <input type="text" name="num4" id="num4" />
+    <button onclick="hundlesMulBtn()">=</button>
+    <label id="ansMul"></label>
+
+    <br />
+    <input type="text" name="num5" id="num5" />
+    <label> mod </label>
+    <input type="text" name="num6" id="num6" />
+    <button onclick="hundlesDivBtn()">=</button>
+    <label id="ansDiv"></label>
+
+    <!-- important to connect html with js -->
+    <script src="task1.js"></script>
+  </body>
 </html>
