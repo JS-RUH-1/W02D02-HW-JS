@@ -1,3 +1,43 @@
+//Basic Calculator JS
+
+function Add (){
+ num1= document.getElementById("num1").value;
+ num2= document.getElementById("num2").value;
+
+ document.getElementById("display2").innerHTML = parseInt(num1)+parseInt(num2)
+}
+function Substract (){
+  num1= document.getElementById("num1").value;
+  num2= document.getElementById("num2").value;
+ 
+  document.getElementById("display2").innerHTML = num1-num2
+ }
+ function Divide (){
+  num1= document.getElementById("num1").value;
+  num2= document.getElementById("num2").value;
+
+  document.getElementById("display2").innerHTML = num1/num2
+ }
+ function Multiplacation (){
+  num1= document.getElementById("num1").value;
+  num2= document.getElementById("num2").value;
+
+  document.getElementById("display2").innerHTML = num1*num2
+ }
+ function Reset (){
+  num1= document.getElementById("num1").value = "";
+  num2= document.getElementById("num2").value = "";
+ 
+  document.getElementById("display2").innerHTML = "= ..."
+ }
+
+
+
+
+
+
+
+//Mac Os Calculator JS
 let currentNumber = "0";
 let previousNumber = "0";
 let calculation = "";
@@ -302,3 +342,6 @@ multiply.addEventListener("mouseup", function () {
 equals.addEventListener("mouseup", function () {
   equals.style.backgroundColor = "rgb(253,158,43)";
 });
+
+
+

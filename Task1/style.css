@@ -1,9 +1,40 @@
+.mycontainer{
+    display:grid;
+    grid-template-areas: 'box   box result'
+                         '          '
+                         'btn  btn  btn  btn '
+        ;
+}
+.boxstlye {
+border-radius: 10px;
+height: 50px;
+width: 60px;
+font-size: 30px;
+text-align: center;
+padding:30px;
+}
+
+.textboxes{
+    grid-area: "box";
+    
+}
+.mybtn{
+    grid-area: "btn";
+}
+.result{
+    grid-area: "result";
+}
+
+
+
+
 body {
     background-color:rgb(204, 245, 221);
     font-family: Helvetica ,Arial, sans-serif;
     font-weight: 50;
     
 }
+
 h1, h2, a {
     color: white;
     text-align: center;
