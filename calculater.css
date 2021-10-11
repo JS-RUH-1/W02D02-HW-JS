@@ -1,20 +1,77 @@
-.calculater {
-    padding: 50px;
-    margin: 50px;
-    display: grid;
-    height: 300px;
-    width: 200px;
+body{
+    background-color: #a9bd7e;
+}
+table{
+    margin: auto;
+    background-color: #9dd2ea;
+    width: 295px;
+    height: 325px;
+    text-align: center;
+    border-radius: 4px;
 }
 
-.row {
-    flex-direction: row;
+input{
+    outline: 0;
+    position: relative;
+    left: 5px;
+    top: 5px;
+    border: 0;
+    color: #495069;
+    background-color: 4px;
+    width: 60px;
+    height: 50px;
+    margin: 5px;
+    font-size: 20px;
+    box-shadow: 0 4px rgba(0,0,0,0.2);
 }
 
-.row>input{
-    width: 45px;
-    height: 45px;
+.operator{
+    background-color: #f1ff92;
+    position: relative;
 }
 
-.fixwh{
-    width: 90% !important;
+
+#clear{
+    position: relative;
+    background-color: #ff9fa8;
+    margin-bottom: 15px;
+}
+
+#result{
+    width: 280px;
+    font-size: 26px;
+    text-align: center;
+    background-color: #f1faeb;
+}
+/* result hover effect */
+#result:hover{
+    width: 280px;
+    font-size: 26px;
+    text-align: center;
+    box-shadow: 0 4px rgba(0,0,0,0.2);
+    background-color: #f1faeb;
+}
+
+/* add input hover effectg */
+input:hover{
+    border: 0 solid #000;
+    color: #495069;
+    background-color: #8f5fda;
+    border-radius: 4px;
+    width: 60px;
+    height: 50px;
+    margin: 5px;
+    font-size: 20px;
+    box-shadow: 0 4px #644294;
+}
+/* hover */
+.operator:hover{
+    background-color: #e7f56b;
+    box-shadow: 0 4px #b7c259;
+}
+/* hover */
+#clear:hover{
+    background-color: #f297a0;
+    margin-bottom: 15px;
+    box-shadow: 0 4px #cc7f86;
 }
