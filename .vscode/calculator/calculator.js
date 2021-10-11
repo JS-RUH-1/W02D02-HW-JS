@@ -6,8 +6,10 @@ const updateCalc = (force) => {
     console.log(ops);
     console.log(numbers);
 
-    if(force || (numbers.length === 3 && numbers[2] !== 0)) {
-        if(numbers[1]) {
+    if(force || numbers.length === 3) {
+        
+        if(force && !numbers[1]) numbers[1] = numbers[0];
+
             let newResult;
             if(ops === "+") newResult = numbers[0] + numbers[1]
             if(ops === "-") newResult = numbers[0] - numbers[1]
@@ -15,7 +17,7 @@ const updateCalc = (force) => {
             if(ops === "%") newResult = numbers[0] % numbers[1]
             if(ops === "/") newResult = numbers[0] / numbers[1]
             numbers = [newResult];
-        }
+        
     }
     // UPDATE display number to result
     if(numbers[1] !== 0) document.getElementById("display").innerText = numbers[numbers.length - 1];
@@ -32,6 +34,7 @@ const op = (val) => {
     ops = val;
     numbers.push(0);
     updateCalc();
+    if(numbers.length === 1) numbers.push(0);
 }
 
 
