@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.css">
     <title>Document</title>
   </head>
   <body>
@@ -26,8 +27,46 @@
     <label id="euros"></label> <br />
     <label id="pounds"></label> <br />
     <br />
-    <label for="elements">Choose an option:</label>
+    <label for="elements">Choose an option:</label><br>
     <select name="elements" id="elements"></select>
+    <div class="container my-4 mx-2 rounded" style="width:300px;height: auto; border:1px solid black">
+      <div class="container border border-dark mt-1 rounded"style="width: 100%;">
+        
+          <input type="text" class="mt-3 ms-4 ps-2 border-0" id="val1" style="height: 40px;display: block;" readonly></input>
+          <input type="text" class="fw-bold text-center border-0"id="op" style="width:10%;height: 40px;display: inline-block;" readonly> </input>
+          <input type="text" id="val2" class="border-0"style="height: 40px;width:88%;display: inline-block;" readonly></input>
+          <input type="text" class="fw-bold text-center border-0"id="equal" style="width:10%;height: 40px;display: inline-block;" readonly> </input>
+          <input type="text" id="res" class="border border-bottom"style="height: 40px;width:88%;display: inline-block;" readonly></input>
+      </div>
+      <div class="row text-center px-4 mt-2">
+        <button class="btn btn-secondary" id="clean" onclick="claen()">C</button>
+      </div>
+        <div class="row text-center mt-2 mx-auto">
+          <div class="col"><button class="btn btn-secondary w-100" id="n7" onclick="disp(this)" value="7">7</button></div>
+          <div class="col"><button class="btn btn-secondary w-100" id="n8" value="8" onclick="disp(this)">8</button></div>
+          <div class="col"><button class="btn btn-secondary w-100" id="n9" value="9" onclick="disp(this)">9</button></div>
+          <div class="col"><button class="btn btn-secondary w-100" id="mult" value="X" onclick="operation(this)">X</button></div>
+        </div>
+        <div class="row text-center mt-2 mx-auto">
+          <div class="col"><button class="btn btn-secondary w-100" id="n4" value="4" onclick="disp(this)">4</button></div>
+          <div class="col"><button class="btn btn-secondary w-100" id="n5" value="5" onclick="disp(this)">5</button></div>
+          <div class="col"><button class="btn btn-secondary w-100" id="n6" value="6" onclick="disp(this)">6</button></div>
+          <div class="col"><button class="btn btn-secondary w-100" id="divid" value="/" onclick="operation(this)">/</button></div>
+        </div>
+        <div class="row text-center mt-2 mx-auto">
+          <div class="col"><button class="btn btn-secondary w-100" id="n1" value="1" onclick="disp(this)">1</button></div>
+          <div class="col"><button class="btn btn-secondary w-100" id="n2" value="2" onclick="disp(this)">2</button></div>
+          <div class="col"><button class="btn btn-secondary w-100" id="n3" value="3" onclick="disp(this)">3</button></div>
+          <div class="col"><button class="btn btn-secondary w-100" id="sum" value="+" onclick="operation(this)">+</button></div>
+        </div>
+        <div class="row text-center my-2 mx-auto">
+          <div class="col"></div>
+          <div class="col"><button class="btn btn-secondary w-100" id="n0" value="0"  onclick="disp(this)">0</button></div>
+          <div class="col"><button class="btn btn-secondary w-100" onclick="calculate()">=</button></div>
+          <div class="col"><button class="btn btn-secondary w-100" id="sub" value="-" onclick="operation(this)">-</button></div>
+        </div>
+    </div>
+    
     <script type="text/javascript" src="task2.js"></script>
   </body>
 </html>
