@@ -1,7 +1,8 @@
 
 let event_button=document.getElementById('button');
+let counter =0;
 document.getElementById("button").addEventListener('click',function(){
-    event_button.innerText=++counter;
+    event_button.innerText="Clicked "+(++counter);
 })
 
 let global = document.getElementById("convert").addEventListener("click",currency_convert);
