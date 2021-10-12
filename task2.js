@@ -1,8 +1,5 @@
-function randomNum() {
-  let x = 0;
-
-  while (x >= 0) {
-    document.getElementById("button").innerHTML = x;
-    x++;
-  }
+let count = 0;
+function clicks() {
+  count++;
+  document.getElementById("button").innerHTML = `Clicked ${count}`;
 }
