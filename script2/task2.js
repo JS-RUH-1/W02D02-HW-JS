@@ -1,7 +1,7 @@
 let count = 0;
 
 let button = document.getElementById("button")
-button.onclick = updateStatus;
+// button.onclick = updateStatus;
 
 function calc() {
     console.log("i am here")
@@ -9,31 +9,32 @@ function calc() {
 }
     
 
-let gbp, usd, eur; 
-function init()
-{
-    gbp = document.getElementById("GBP");
-    usd = document.getElementById("USD");
-    eur = document.getElementById("EUR");
+
+function Add(){
+   
+     let input=document.getElementById("rands").value ;
+
+ let gbp =parseFloat(input)*0.049
+ let usd =parseFloat(input)*0.067
+ let eur =parseFloat(input)*0.058
+ 
   
+    document.getElementById("GBP").innerHTML= gbp;
+    document.getElementById("USD").innerHTML= usd;
+    document.getElementById("EUR").innerHTML= eur ;
+
+
+ 
+
 }
 
-function gbp1()
-{
-    usd.value = parseFloat(gbp.value) * 0.49246;
-    eur.value = parseFloat(gbp.value) * 0.69714;
-    cad.value = parseFloat(gbp.value) * 0.50221;
-    aud.value = parseFloat(gbp.value) * 0.43497;
-}
+let slect= document.getElementById("elements")
 
-function eur1()
-{
-    gbp.value = parseFloat(eur.value) * 1.43448;
-    usd.value = parseFloat(eur.value) * 0.70641;
-    cad.value = parseFloat(eur.value) * 0.72037;
-    aud.value = parseFloat(eur.value) * 0.62382;
+for (let i =1; i<=25; i++){
+    let option= document.createElement("option");
+    option.innerHTML=i;
+    slect.appendChild(option)
 }
-
 
 // function myFunction() {
 //     document.getElementById("myDropdown").classList.toggle("show");}
