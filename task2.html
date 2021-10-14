@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+
   <body>
     <h1>The first heading</h1>
 
@@ -15,25 +16,30 @@
       of your web page.
     </p>
 
-    <button id="button" onclick="randomNum ()">Clicked 0</button><br />
+    <h3>Clicks:<span id="clicks">0</span></h3>
+    <button type="button" onclick="add()">+</button>
     <br />
     <br />
-    <label>Enter rands value</label>
-    <input id="rands" />
-    <br /><br />
-    <button id="convert" onclick="init(rands.value)">convert</button><br /><br />
+    <form>
+      <br />
+      <br />Value
+      <input type="text" id="value" /><br>
+      <br />Conversion
+      <input type="text" id="conversion" />
+      <br />
+      <br >
+      
+      <br />
+      <br>
 
-    <paragraph id="dollars" onchange="usdfunc()"/>
-    <label id="dollars">USD</label> <br />
+      <select name="converts" id="Selection">
+        <option>Chose Option</option>
+        <option value="1">rands to dollars</option>
+        <option value="2">rands to euros</option>
+        <option value="3">rands to pounds</option>
+      </select>
+    </form>
 
-    <paragraph id="euros"  onchange="eurfunc()" />
-    <label id="euros">euros</label> <br />
-
-    <paragraph id="pounds" onchange="gbpfunc()"/>
-    <label id="pounds">  GBP</label> <br />
-    <br />
-    <label for="elements">Choose an option:</label>
-    <select name="elements" id="elements"></select>
     <script type="text/javascript" src="task2.js"></script>
   </body>
 </html>
